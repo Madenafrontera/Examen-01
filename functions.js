@@ -14,7 +14,11 @@ document.addEventListener('DOMContentLoaded', () => {
             const deleteButton = document.createElement('button');
             deleteButton.textContent = 'X';
             deleteButton.addEventListener('click', () => {
-                taskList.removeChild(li);
+                li.classList.add('fade-out');
+                // Espera a que la animación termine antes de eliminar el elemento
+                li.addEventListener('animationend', () => {
+                    li.remove();
+                });
             });
 
             li.appendChild(deleteButton);
