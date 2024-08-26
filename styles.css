@@ -1,1 +1,104 @@
 
+* {
+    font-family: Rubik, sans-serif;
+}
+
+body {
+    font-family: Rubik, sans-serif;
+    background-image: radial-gradient( circle 400px at 6.8% 8.3%,  rgba(255,244,169,1) 0%, rgba(255,244,234,1) 100.2% );
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.centrar {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    flex-direction: column;
+}
+
+.barradetareas {
+    margin: 60px;
+    display: flex;   
+    background: rgba(0,0,0,0.2);
+    flex-direction: column;
+    border-radius: 50px;
+}
+
+#taskInput {
+    padding-left: 20px;
+    font-size: 20px;
+    background: rgba(0,0,0,0);
+    border: none; 
+    width: 400px;
+}
+
+#taskList {
+    padding-left: 20px;
+    font-size: 20px;
+    background-color: rgba(0,0,0,0);
+    border: none; 
+    width: 400px;
+}
+
+input:focus {
+    border: none;
+    outline: none;
+    box-shadow:rgba(0, 0, 0, 0); 
+}
+
+#addButton {
+    background-color: rgba(0,0,0,0);
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    font-size: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+button:hover {
+    opacity: 0.5;  
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid rgba(0,0,0,0);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+li.completed {
+    text-decoration: line-through;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+}
+
+li button {
+    float: right;
+    color: black;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0);
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    border: none;
+    font-size: large;
+}
+
+li button:hover {
+    background-color: #c82333;
+}
